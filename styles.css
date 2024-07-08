@@ -79,3 +79,17 @@ html, body {
     font-size: 2rem;
     padding: 10px 0 0 80px;
 }
+
+div.form-line {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 120px;
+}
