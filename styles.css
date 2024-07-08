@@ -97,3 +97,7 @@ input {
     font-size: 1rem;
     width: 160px;
 }
+
+button[type="submit"] {
+    margin: 20px 0px 20px 40px;
+}
