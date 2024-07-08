@@ -74,3 +74,8 @@ html, body {
     line-height: 2rem;
     padding: 60px 80px 20px 40px;
 }
+
+.form-content-wrapper p:first-child {
+    font-size: 2rem;
+    padding: 10px 0 0 80px;
+}
