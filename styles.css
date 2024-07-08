@@ -9,7 +9,7 @@
 }
 
 :root {
-    --main-content-left-margin: 40px;
+    --main-content-left-margin: 120px;
 }
 
 * {
@@ -76,14 +76,13 @@ html, body {
 .form-description-wrapper {
     font-size: 1.25rem;
     line-height: 2rem;
-    padding: 60px 80px 20px 40px;
+    padding: 60px 80px 20px var(--main-content-left-margin);
 }
 
 .form-content-wrapper p:first-child {
     font-size: 1.5rem;
-    padding: 10px 0 0 40px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    padding-top: 10px;
+    margin: 20px 0 40px var(--main-content-left-margin);
 }
 
 div.form-line {
@@ -94,7 +93,7 @@ div.form-line {
 div.form-item {
     display: flex;
     flex-direction: column;
-    margin: 0px 160px 0px 40px;
+    margin: 0px 160px 0px var(--main-content-left-margin);
 }
 
 input {
@@ -105,11 +104,11 @@ input {
 button[type="submit"] {
     height: 40px;
     width: 160px;
-    margin: 20px 0px 20px 40px;
+    margin: 20px 0px 20px var(--main-content-left-margin);
 }
 
 .account-options-wrapper p {
-    margin: 0 0 0 40px;
+    margin: 0 0 0 var(--main-content-left-margin);
 }
 
 p.account-login a {
