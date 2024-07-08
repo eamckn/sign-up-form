@@ -58,13 +58,19 @@ html, body {
     flex-direction: column;
 }
 
+.form-description-wrapper,
+.account-options-wrapper {
+    height: 30vh;
+    background-color: white;
+}
+
 .form-content-wrapper {
-    flex: 2;
+    height: 40vh;
     background-color: antiquewhite;
 }
 
-.form-description-wrapper,
-.account-options-wrapper {
-    flex: auto;
-    background-color: white;
+.form-description-wrapper {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding: 60px 80px 20px 40px;
 }
