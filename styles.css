@@ -28,6 +28,7 @@ html, body {
     height: 100%;
     width: 35%;
     background: no-repeat url("./guitarist.png");
+    background-size: 100% 100%;
     position: relative;
 }
 
