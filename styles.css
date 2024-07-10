@@ -28,7 +28,7 @@ html, body {
     height: 100%;
     width: 35%;
     border: .5rem solid black;
-    background: green;
+    background: no-repeat url("./guitarist.png");
     position: relative;
 }
 
@@ -40,7 +40,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0 0 0 / 20%);
+    background-color: rgb(255 255 255 / 20%);
 }
 
 .odin-logo {
@@ -60,17 +60,19 @@ html, body {
     width: 65%;
     display: flex;
     flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
 }
 
 .form-description-wrapper,
 .account-options-wrapper {
     height: 30vh;
-    background-color: white;
+    background-color: rgb(71, 67, 66);
 }
 
 .form-content-wrapper {
     height: 40vh;
-    background-color: antiquewhite;
+    background-color: rgb(31, 31, 31);
 }
 
 .form-description-wrapper {
@@ -81,8 +83,8 @@ html, body {
 
 .form-content-wrapper p:first-child {
     font-size: 1.5rem;
-    padding-top: 10px;
-    margin: 20px 0 40px var(--main-content-left-margin);
+    padding-top: 20px;
+    margin: 0 0 40px var(--main-content-left-margin);
 }
 
 div.form-line {
@@ -103,15 +105,19 @@ input {
     padding: .15rem;
 }
 
-input:invalid {
+input:invalid:not(:focus) {
     border: 2px solid red;
-    background-color: rgb(255 0 0 / 20%);
+    background-color: rgb(255 125 125 / 50%);
 }
 
 button[type="submit"] {
     height: 40px;
     width: 160px;
     margin: 20px 0px 10px var(--main-content-left-margin);
+    background-color: rgb(31, 31, 31);
+    border-radius: 10px;
+    border: none;
+    color: white;
 }
 
 .account-options-wrapper p {
@@ -120,4 +126,8 @@ button[type="submit"] {
 
 p.account-login a {
     text-decoration: none;
+}
+
+a:visited {
+    color: aqua;
 }
