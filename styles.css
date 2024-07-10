@@ -120,12 +120,10 @@ input::placeholder {
 
 input:user-invalid::placeholder {
     color: white;
-    opacity: .8;
 }
 
 input:focus::placeholder {
     color: black;
-    opacity: .5;
 }
 
 input:user-invalid {
@@ -141,7 +139,8 @@ input:user-valid {
 input:focus {
     outline: none;
     border: 1px solid blue;
-    background-color: rgb(196 196 196)
+    background-color: rgb(196 196 196);
+    box-shadow: 2px 2px 2px black;
 }
 
 button[type="submit"] {
