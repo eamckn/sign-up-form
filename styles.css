@@ -63,22 +63,19 @@ html, body {
     color: white;
 }
 
-.form-description-wrapper {
+.form-description-wrapper,
+.account-options-wrapper {
     flex: auto;
     max-height: 30%;
     background-color: rgb(71, 67, 66);
-}
-
-.account-options-wrapper {
-    flex: auto;
-    min-height: 30%;
-    background-color: rgb(71 67 66);
+    overflow: auto;
 }
 
 .form-content-wrapper {
     flex: auto;
     max-height: 40%;
     background-color: rgb(31, 31, 31);
+    overflow: auto;
 }
 
 .form-description-wrapper {
