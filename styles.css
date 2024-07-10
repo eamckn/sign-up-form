@@ -110,20 +110,24 @@ div.form-item {
 input {
     font-size: 1rem;
     width: 160px;
-    border: 1px solid black;
     border-radius: 4px;
     padding: .15rem;
+}
+
+input:user-invalid {
+    border: 1px solid red;
+    background-color: rgb(255 125 125 / 50%);
+}
+
+input:user-valid {
+    border: 1px solid green;
+    background-color: rgb(125 255 125 / 50%);
 }
 
 input:focus {
     outline: none;
     border: 1px solid blue;
     background-color: rgb(196 196 196)
-}
-
-input:invalid:not(:focus) {
-    border: 1px solid red;
-    background-color: rgb(255 125 125 / 50%);
 }
 
 button[type="submit"] {
