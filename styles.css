@@ -63,21 +63,28 @@ html, body {
     color: white;
 }
 
-.form-description-wrapper,
-.account-options-wrapper {
-    height: 30vh;
+.form-description-wrapper {
+    flex: auto;
+    max-height: 30%;
     background-color: rgb(71, 67, 66);
 }
 
+.account-options-wrapper {
+    flex: auto;
+    min-height: 30%;
+    background-color: rgb(71 67 66);
+}
+
 .form-content-wrapper {
-    height: 40vh;
+    flex: auto;
+    max-height: 40%;
     background-color: rgb(31, 31, 31);
 }
 
 .form-description-wrapper {
     font-size: 1.25rem;
     line-height: 1.5rem;
-    padding: 60px 80px 20px var(--main-content-left-margin);
+    padding: 60px 80px 0 var(--main-content-left-margin);
 }
 
 .form-content-wrapper p:first-child {
@@ -89,6 +96,12 @@ html, body {
 div.form-line {
     display: flex;
     margin-bottom: 30px;
+}
+
+div.last-form-line {
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 30px;
 }
 
 div.form-item {
