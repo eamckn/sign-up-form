@@ -27,7 +27,6 @@ html, body {
 .image-sidebar {
     height: 100%;
     width: 35%;
-    border: .5rem solid black;
     background: no-repeat url("./guitarist.png");
     position: relative;
 }
@@ -101,12 +100,19 @@ div.form-item {
 input {
     font-size: 1rem;
     width: 160px;
+    border: 1px solid black;
     border-radius: 4px;
     padding: .15rem;
 }
 
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    background-color: rgb(196 196 196)
+}
+
 input:invalid:not(:focus) {
-    border: 2px solid red;
+    border: 1px solid red;
     background-color: rgb(255 125 125 / 50%);
 }
 
@@ -122,6 +128,10 @@ button[type="submit"] {
 
 .account-options-wrapper p {
     margin: 0 0 0 var(--main-content-left-margin);
+}
+
+.account-options-wrapper p {
+    margin-top: 10px;
 }
 
 p.account-login a {
