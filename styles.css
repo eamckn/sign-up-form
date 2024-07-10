@@ -118,6 +118,16 @@ input::placeholder {
     opacity: .5;
 }
 
+input:user-invalid::placeholder {
+    color: white;
+    opacity: .8;
+}
+
+input:focus::placeholder {
+    color: black;
+    opacity: .5;
+}
+
 input:user-invalid {
     border: 1px solid red;
     background-color: rgb(255 125 125 / 50%);
