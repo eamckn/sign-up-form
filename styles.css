@@ -114,6 +114,10 @@ input {
     padding: .15rem;
 }
 
+input::placeholder {
+    opacity: .5;
+}
+
 input:user-invalid {
     border: 1px solid red;
     background-color: rgb(255 125 125 / 50%);
